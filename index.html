@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Question Generator - Glass HUD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+</head>
+<body>
+    <div class="hud-container">
+        <header class="hud-header">
+            <h1>Math Question Generator</h1>
+            <div class="stats">
+                <span id="score">Score: 0</span>
+                <span id="timer">Time: 0s</span>
+            </div>
+        </header>
+
+        <div class="controls">
+            <select id="topic-select">
+                <option value="basic">Basic Arithmetic</option>
+                <option value="long-mult">Long Multiplication</option>
+                <option value="algebra">Algebra</option>
+                <option value="geometry">Geometry</option>
+                <option value="trigonometry">Trigonometry</option>
+                <option value="statistics">Statistics</option>
+                <option value="calculus">Calculus</option>
+                <option value="diff-eq">Differential Equations</option>
+            </select>
+
+            <select id="difficulty-select">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button id="new-question">New Question</button>
+            <button id="reveal-answer">Reveal Answer</button>
+        </div>
+
+        <main class="question-display">
+            <div id="question" class="katex-math"></div>
+            <div id="answer" class="katex-math hidden"></div>
+        </main>
+
+        <div class="history">
+            <h3>History</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
