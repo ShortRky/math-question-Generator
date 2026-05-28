@@ -114,7 +114,7 @@ class MathGenerator {
                 break;
             case '÷':
                 b = Math.floor(Math.random() * (difficulty === 'easy' ? 10 : difficulty === 'medium' ? 15 : 20)) + 1;
-                a = b * (Math.floor(Math.random() * (difficulty === 'easy' ? 10 : difficulty === 'medium' ? 20 : 50)) + 1;
+                a = b * (Math.floor(Math.random() * (difficulty === 'easy' ? 10 : difficulty === 'medium' ? 20 : 50)) + 1);
                 question = `${a} \\div ${b} = ?`;
                 answer = a / b;
                 break;
