@@ -98,6 +98,15 @@ body {
     align-items: center;
 }
 
+.output-text {
+    white-space: pre-wrap;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: left;
+    width: 100%;
+    word-break: break-word;
+}
+
 .katex-math {
     color: #fff;
     font-size: 2rem;
